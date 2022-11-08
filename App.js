@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StyleSheet, SafeAreaView } from 'react-native';
 import StartGameScreen from './screens/StartGameScreen';
 import NotLogged from './screens/NotLogged';
-import { StatusBar } from 'expo-status-bar';
 
 
 const App = () => {
@@ -24,7 +23,7 @@ const App = () => {
     </SafeAreaView>
   )
 }
-<StatusBar style="auto" />
+
 
 const styles = StyleSheet.create({
   screen: {
