@@ -5,6 +5,7 @@ import Input from "../components/Input";
 import Plantillas from "../Constants/plantillas";
 import Header from "../components/Header";
 import GameOverScreen from "./GameOverScreen";
+import { useFonts } from 'expo-font';
 
 
 const StartGameScreen = () => {
@@ -13,6 +14,15 @@ const StartGameScreen = () => {
     const [numeroAdivina, SetNumeroAdivina] = useState(Math.floor(Math.random() * 10 + 1))
     const [enteredValue, SetEnteredValue] = useState("")
     const [selectedNumber, SetSelectedNumber] = useState("");
+    
+    const [fontsLoaded] = useFonts({
+        'IndieFlower-Regular': require('../assets/fonts/IndieFlower-Regular.ttf'),
+
+      });
+
+      if (!fontsLoaded) {
+        return null;
+      }
 
     console.log("NUMERO DE LA MAQUINA", numeroAdivina) // TRAMPITA PARA SABER CUAL ES EL NUMERO A ADIVINAR
 
@@ -116,7 +126,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     robotoFont: {
-        // fontFamily: "IndieFlower-Regular",
+        fontFamily: "IndieFlower-Regular",
         fontSize: 30,
         textAlign: "center"
     }
