@@ -4,6 +4,7 @@ Se adjunta archivo maquetación en AdobeXD. Llamado `devapp-Clase7`
 
 ## Proyecto - _Detalle_
 
+Se utiliza fuentes externas.
 Se utilizan imagenes locales e imagenes llamadas desde la web, utilizando "uri".
 Se arma un archivo denominado _Plantillas.js_ para contener de forma predeterminada colores o fuentes para reutilizar en código.
 
